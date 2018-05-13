@@ -12,7 +12,7 @@ class HealthKitCommunication {
 
     let healthAuth = HKHealthStore()
 
-    func getPermission(completion: @escaping (Bool) -> ()) {
+    private func getPermission(completion: @escaping (Bool) -> ()) {
         guard let distanceType = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning) else {
             print("Something went wrong asking for distanceWalkingRunning")
             return

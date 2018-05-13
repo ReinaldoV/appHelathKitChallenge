@@ -10,7 +10,7 @@ struct ObjectiveDetailViewModel {
     let title: String
     let description: String
     let percentage: Int
-    let current: Float
-    let goal: Float
+    let current: Double
+    let goal: Double
     let reward: Reward
 }

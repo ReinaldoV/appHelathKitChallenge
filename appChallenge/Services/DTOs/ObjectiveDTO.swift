@@ -11,6 +11,6 @@ struct ObjectiveDTO: Codable {
     let title: String
     let description: String
     let type: String
-    let goal: Float
+    let goal: Double
     let reward: RewardDTO
 }

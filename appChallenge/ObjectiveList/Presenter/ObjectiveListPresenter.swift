@@ -19,9 +19,11 @@ class ObjectiveListPresenter: ObjectiveListPresenterProtocol {
     }
 
     func getObjectives() {
-        self.objectives = interactor.getObjectives()
-        let objectivesViewModel = prepareDataForView(objectives: self.objectives)
-        view?.showObjectiveList(objectivesList: objectivesViewModel)
+        interactor.getObjectives { (objectives) in
+            self.objectives = objectives
+            let objectivesViewModel = self.prepareDataForView(objectives: self.objectives)
+            self.view?.showObjectiveList(objectivesList: objectivesViewModel)
+        }
     }
 
     private func prepareDataForView(objectives: [Objective]) -> [ObjectiveListViewItemModel] {

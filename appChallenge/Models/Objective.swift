@@ -10,8 +10,8 @@ struct Objective {
     let title: String
     let description: String
     let type: ObjectiveType
-    let goal: Float
-    let progress: Float
+    let goal: Double
+    let progress: Double
     let reward: Reward
 }
 
