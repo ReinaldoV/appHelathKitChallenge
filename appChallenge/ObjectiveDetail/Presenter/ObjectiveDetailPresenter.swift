@@ -32,6 +32,7 @@ class ObjectiveDetailPresenter: ObjectiveDetailPresenterProtocol {
         if percentage > 1 {
             percentage = 1
         }
+        percentage = percentage * 100
         return String(format: "%.f", percentage)
     }
     
