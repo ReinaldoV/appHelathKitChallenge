@@ -18,7 +18,8 @@ class ObjectiveListViewController: UIViewController {
     var objectivesList: [ObjectiveListViewItemModel] = []
     
     static func instantiate(presenter: ObjectiveListPresenterProtocol) -> ObjectiveListViewController {
-        let vc = ObjectiveListViewController(nibName: "ObjectiveListView", bundle: nil)
+        let vc = UIStoryboard(name: "ObjectiveListViewStoryboard", bundle: nil).instantiateViewController(
+            withIdentifier: "ObjectiveListViewController") as! ObjectiveListViewController
         presenter.view = vc
         vc.presenter = presenter
         return vc
