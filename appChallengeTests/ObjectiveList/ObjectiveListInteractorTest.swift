@@ -35,7 +35,7 @@ class ObjectiveListInteractorTest: XCTestCase {
         XCTAssertNotNil(sut, "Sut must not be nil.")
     }
     
-    // MARK: - Get Airports test.
+    // MARK: - Get Objectives test.
     func testGetObjectives() {
         sut.getObjectives { objectives in
             XCTAssertNotNil(objectives)

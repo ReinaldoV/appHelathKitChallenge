@@ -44,7 +44,7 @@ class ObjectiveListPresenterTest: XCTestCase {
     }
 
 
-    // MARK: - GetAirports test.
+    // MARK: - GetObjectives test.
     func testGetObjectives() {
         sut.getObjectives()
         XCTAssertTrue(objectiveListInteractorMock.getObjectivesWasCalled)

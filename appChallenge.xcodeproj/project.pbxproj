@@ -41,6 +41,7 @@
 		919CF82420A8C258009FFA3D /* ObjectiveListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF82320A8C258009FFA3D /* ObjectiveListInteractorTest.swift */; };
 		919CF82620A8C3A5009FFA3D /* ObjectiveListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF82520A8C3A5009FFA3D /* ObjectiveListPresenterTest.swift */; };
 		919CF82820A8C9E3009FFA3D /* ObjectiveListViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF82720A8C9E3009FFA3D /* ObjectiveListViewTest.swift */; };
+		919CF82A20A8CEB3009FFA3D /* ObjectiveDetailPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF82920A8CEB3009FFA3D /* ObjectiveDetailPresenterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		919CF82320A8C258009FFA3D /* ObjectiveListInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveListInteractorTest.swift; sourceTree = "<group>"; };
 		919CF82520A8C3A5009FFA3D /* ObjectiveListPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveListPresenterTest.swift; sourceTree = "<group>"; };
 		919CF82720A8C9E3009FFA3D /* ObjectiveListViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveListViewTest.swift; sourceTree = "<group>"; };
+		919CF82920A8CEB3009FFA3D /* ObjectiveDetailPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveDetailPresenterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +343,7 @@
 		919CF82220A8C211009FFA3D /* ObjectiveDetail */ = {
 			isa = PBXGroup;
 			children = (
+				919CF82920A8CEB3009FFA3D /* ObjectiveDetailPresenterTest.swift */,
 			);
 			path = ObjectiveDetail;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				919CF82620A8C3A5009FFA3D /* ObjectiveListPresenterTest.swift in Sources */,
 				919CF82820A8C9E3009FFA3D /* ObjectiveListViewTest.swift in Sources */,
 				919CF82420A8C258009FFA3D /* ObjectiveListInteractorTest.swift in Sources */,
+				919CF82A20A8CEB3009FFA3D /* ObjectiveDetailPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

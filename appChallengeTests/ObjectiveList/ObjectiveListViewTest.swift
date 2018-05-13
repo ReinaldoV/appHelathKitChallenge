@@ -47,7 +47,7 @@ class ObjectiveListViewTest: XCTestCase {
         XCTAssertTrue(objectivessListPresenterMock.getObjectivesWasCalled)
     }
 
-    // MARK: - Test show airports
+    // MARK: - Test show objectives
     func testShowObjectives() {
         _ = sut.view
         let expectedObjectives = [ObjectiveListViewItemModel]()
