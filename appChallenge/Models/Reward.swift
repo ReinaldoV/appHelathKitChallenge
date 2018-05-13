@@ -7,12 +7,13 @@
 //
 
 struct Reward {
-    let trophy: Medals
+    let trophy: Trophies
     let points: Int
 }
 
-enum Medals {
-    case bronze
-    case silver
-    case gold
+enum Trophies {
+    case bronzeMedal
+    case silverMedal
+    case goldMedal
+    case zombiesHand
 }

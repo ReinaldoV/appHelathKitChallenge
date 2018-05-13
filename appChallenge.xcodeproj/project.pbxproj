@@ -30,6 +30,11 @@
 		919CF80020A83213009FFA3D /* ObjectiveDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF7FF20A83213009FFA3D /* ObjectiveDetailViewModel.swift */; };
 		919CF80320A836AD009FFA3D /* ObjectiveListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF80220A836AD009FFA3D /* ObjectiveListCell.swift */; };
 		919CF80520A836BC009FFA3D /* ObjectiveListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919CF80420A836BC009FFA3D /* ObjectiveListCell.xib */; };
+		919CF80920A87FB6009FFA3D /* ObjectivesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF80820A87FB6009FFA3D /* ObjectivesServices.swift */; };
+		919CF80B20A8826D009FFA3D /* RewardDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF80A20A8826D009FFA3D /* RewardDTO.swift */; };
+		919CF80D20A882F2009FFA3D /* ObjectiveDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF80C20A882F2009FFA3D /* ObjectiveDTO.swift */; };
+		919CF80F20A88394009FFA3D /* ObjectivesResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF80E20A88394009FFA3D /* ObjectivesResponseDTO.swift */; };
+		919CF81120A8853D009FFA3D /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF81020A8853D009FFA3D /* Mapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +84,11 @@
 		919CF7FF20A83213009FFA3D /* ObjectiveDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveDetailViewModel.swift; sourceTree = "<group>"; };
 		919CF80220A836AD009FFA3D /* ObjectiveListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveListCell.swift; sourceTree = "<group>"; };
 		919CF80420A836BC009FFA3D /* ObjectiveListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObjectiveListCell.xib; sourceTree = "<group>"; };
+		919CF80820A87FB6009FFA3D /* ObjectivesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectivesServices.swift; sourceTree = "<group>"; };
+		919CF80A20A8826D009FFA3D /* RewardDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardDTO.swift; sourceTree = "<group>"; };
+		919CF80C20A882F2009FFA3D /* ObjectiveDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveDTO.swift; sourceTree = "<group>"; };
+		919CF80E20A88394009FFA3D /* ObjectivesResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectivesResponseDTO.swift; sourceTree = "<group>"; };
+		919CF81020A8853D009FFA3D /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +139,7 @@
 		919CF7AB20A743E5009FFA3D /* appChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				919CF80620A87F6B009FFA3D /* Services */,
 				919CF7F620A82EF9009FFA3D /* Models */,
 				919CF7DE20A82CA8009FFA3D /* ObjectiveDetail */,
 				919CF7DD20A82C96009FFA3D /* ObjectiveList */,
@@ -259,6 +270,26 @@
 				919CF80420A836BC009FFA3D /* ObjectiveListCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		919CF80620A87F6B009FFA3D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				919CF80720A87F88009FFA3D /* DTOs */,
+				919CF80820A87FB6009FFA3D /* ObjectivesServices.swift */,
+				919CF81020A8853D009FFA3D /* Mapper.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		919CF80720A87F88009FFA3D /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				919CF80A20A8826D009FFA3D /* RewardDTO.swift */,
+				919CF80C20A882F2009FFA3D /* ObjectiveDTO.swift */,
+				919CF80E20A88394009FFA3D /* ObjectivesResponseDTO.swift */,
+			);
+			path = DTOs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,13 +430,18 @@
 				919CF7F820A82F16009FFA3D /* Objective.swift in Sources */,
 				919CF7F520A82DD3009FFA3D /* ObjectiveDetailPresenter.swift in Sources */,
 				919CF7E520A82D40009FFA3D /* ObjectiveListViewController.swift in Sources */,
+				919CF81120A8853D009FFA3D /* Mapper.swift in Sources */,
 				919CF7FA20A83084009FFA3D /* Reward.swift in Sources */,
+				919CF80B20A8826D009FFA3D /* RewardDTO.swift in Sources */,
+				919CF80920A87FB6009FFA3D /* ObjectivesServices.swift in Sources */,
 				919CF80020A83213009FFA3D /* ObjectiveDetailViewModel.swift in Sources */,
 				919CF7B520A743E5009FFA3D /* appChallenge.xcdatamodeld in Sources */,
 				919CF7AF20A743E5009FFA3D /* ViewController.swift in Sources */,
+				919CF80F20A88394009FFA3D /* ObjectivesResponseDTO.swift in Sources */,
 				919CF7F320A82DC7009FFA3D /* ObjectiveDetailViewController.swift in Sources */,
 				919CF7AD20A743E5009FFA3D /* AppDelegate.swift in Sources */,
 				919CF7E920A82D62009FFA3D /* ObjectiveListPresenter.swift in Sources */,
+				919CF80D20A882F2009FFA3D /* ObjectiveDTO.swift in Sources */,
 				919CF80320A836AD009FFA3D /* ObjectiveListCell.swift in Sources */,
 				919CF7FD20A8319D009FFA3D /* ObjectiveListViewItemModel.swift in Sources */,
 				919CF7E320A82D29009FFA3D /* ObjectiveListContracts.swift in Sources */,

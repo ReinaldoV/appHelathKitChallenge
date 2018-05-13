@@ -45,19 +45,23 @@ class ObjectiveListPresenter: ObjectiveListPresenterProtocol {
         return objectivesViewModel
     }
 
-    private func getMedaImage(reward: Medals) -> UIImage {
+    private func getMedaImage(reward: Trophies) -> UIImage {
         var medalImage = UIImage()
         switch reward {
-        case .bronze:
+        case .bronzeMedal:
             if let image = UIImage(named: "bronzeMedal") {
                 medalImage = image
             }
-        case .silver:
+        case .silverMedal:
             if let image = UIImage(named: "silverMedal") {
                 medalImage = image
             }
-        case .gold:
+        case .goldMedal:
             if let image = UIImage(named: "goldMedal") {
+                medalImage = image
+            }
+        case .zombiesHand:
+            if let image = UIImage(named: "zombieHand") {
                 medalImage = image
             }
         }
