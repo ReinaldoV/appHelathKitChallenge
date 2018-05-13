@@ -14,8 +14,13 @@ class ObjectiveListViewController: UIViewController {
     
     @IBOutlet weak var table: UITableView!
     
-    var presenter: ObjectiveListPresenterProtocol?
+    var presenter: ObjectiveListPresenterProtocol!
     var objectivesList: [ObjectiveListViewItemModel] = []
+    
+    convenience init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, presenter: ObjectiveListPresenterProtocol) {
+        self.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.presenter = presenter
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +32,7 @@ class ObjectiveListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        presenter?.getObjectives()
+        presenter.getObjectives()
     }
 }
 
