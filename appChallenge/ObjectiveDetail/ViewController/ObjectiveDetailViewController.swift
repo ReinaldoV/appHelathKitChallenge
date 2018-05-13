@@ -20,6 +20,12 @@ class ObjectiveDetailViewController: UIViewController {
     
     var presenter: ObjectiveDetailPresenterProtocol!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Detail"
+        presenter.getObjectiveInfo()
+    }
+    
     static func instantiate(presenter: ObjectiveDetailPresenterProtocol) -> ObjectiveDetailViewController {
         let vc = UIStoryboard(name: "ObjectiveDetailStoryboard", bundle: nil).instantiateViewController(
             withIdentifier: "ObjectiveDetailViewController") as! ObjectiveDetailViewController
