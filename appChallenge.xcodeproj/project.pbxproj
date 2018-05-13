@@ -35,6 +35,7 @@
 		919CF80D20A882F2009FFA3D /* ObjectiveDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF80C20A882F2009FFA3D /* ObjectiveDTO.swift */; };
 		919CF80F20A88394009FFA3D /* ObjectivesResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF80E20A88394009FFA3D /* ObjectivesResponseDTO.swift */; };
 		919CF81120A8853D009FFA3D /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF81020A8853D009FFA3D /* Mapper.swift */; };
+		919CF81420A88DDF009FFA3D /* HealthKitCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF81320A88DDF009FFA3D /* HealthKitCommunication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		919CF80C20A882F2009FFA3D /* ObjectiveDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveDTO.swift; sourceTree = "<group>"; };
 		919CF80E20A88394009FFA3D /* ObjectivesResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectivesResponseDTO.swift; sourceTree = "<group>"; };
 		919CF81020A8853D009FFA3D /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		919CF81320A88DDF009FFA3D /* HealthKitCommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitCommunication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		919CF7AB20A743E5009FFA3D /* appChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				919CF81220A88DBE009FFA3D /* HealthKitHelpers */,
 				919CF80620A87F6B009FFA3D /* Services */,
 				919CF7F620A82EF9009FFA3D /* Models */,
 				919CF7DE20A82CA8009FFA3D /* ObjectiveDetail */,
@@ -292,6 +295,14 @@
 			path = DTOs;
 			sourceTree = "<group>";
 		};
+		919CF81220A88DBE009FFA3D /* HealthKitHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				919CF81320A88DDF009FFA3D /* HealthKitCommunication.swift */,
+			);
+			path = HealthKitHelpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -427,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				919CF7ED20A82D9F009FFA3D /* ObjectiveDetailContracts.swift in Sources */,
+				919CF81420A88DDF009FFA3D /* HealthKitCommunication.swift in Sources */,
 				919CF7F820A82F16009FFA3D /* Objective.swift in Sources */,
 				919CF7F520A82DD3009FFA3D /* ObjectiveDetailPresenter.swift in Sources */,
 				919CF7E520A82D40009FFA3D /* ObjectiveListViewController.swift in Sources */,
