@@ -6,9 +6,11 @@
 //  Copyright © 2018 adidas. All rights reserved.
 //
 
+import UIKit
+
 struct ObjectiveListViewItemModel {
     let title: String
     let description: String
-    let medal: Medals
+    let medalImage: UIImage
     let isCompleted: Bool
 }
