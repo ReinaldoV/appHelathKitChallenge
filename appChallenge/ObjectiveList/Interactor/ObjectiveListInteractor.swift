@@ -6,4 +6,6 @@
 //  Copyright © 2018 adidas. All rights reserved.
 //
 
-import Foundation
+protocol ObjectiveListInteractorProtocol: class {
+    func getObjectives() -> [Objective]
+}

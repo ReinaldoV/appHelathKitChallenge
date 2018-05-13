@@ -6,4 +6,11 @@
 //  Copyright © 2018 adidas. All rights reserved.
 //
 
-import Foundation
+protocol ObjectiveDetailViewProtocol: class {
+    func refreshObjective(objective: ObjectiveDetailViewModel)
+}
+
+protocol ObjectiveDetailPresenterProtocol: class {
+    var view: ObjectiveDetailViewProtocol { get set }
+    func getObjectiveInfo()
+}

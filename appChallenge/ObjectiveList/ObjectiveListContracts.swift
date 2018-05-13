@@ -6,4 +6,11 @@
 //  Copyright © 2018 adidas. All rights reserved.
 //
 
-import Foundation
+protocol ObjectiveListViewProtocol: class {
+    func showObjectiveList(objectivesList: [ObjectiveListViewItemModel])
+}
+
+protocol ObjectiveListPresenterProtocol: class {
+    var view: ObjectiveListViewProtocol { get set }
+    func getObjectives()
+}
