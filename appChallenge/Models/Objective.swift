@@ -6,7 +6,7 @@
 //  Copyright © 2018 adidas. All rights reserved.
 //
 
-struct Objective {
+struct Objective: Codable {
     let title: String
     let description: String
     let type: ObjectiveType
@@ -15,7 +15,7 @@ struct Objective {
     let reward: Reward
 }
 
-enum ObjectiveType {
+enum ObjectiveType: String, Codable {
     case step
     case walkingDistance
     case runningDistance
