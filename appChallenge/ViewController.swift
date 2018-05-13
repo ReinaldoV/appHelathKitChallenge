@@ -12,7 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        HealthKitCommunication().getTodayDistanceWalkedAndRunned { distance in
+            print("Distance: %.1f", distance)
+        }
+        HealthKitCommunication().getTodaySteps { distance in
+            print("Steps: %.1f", distance)
+        }
     }
 
     override func didReceiveMemoryWarning() {
