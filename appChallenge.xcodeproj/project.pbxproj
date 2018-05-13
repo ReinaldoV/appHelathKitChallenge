@@ -17,7 +17,6 @@
 		919CF7D020A743E6009FFA3D /* appChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF7CF20A743E6009FFA3D /* appChallengeUITests.swift */; };
 		919CF7E320A82D29009FFA3D /* ObjectiveListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF7E220A82D29009FFA3D /* ObjectiveListContracts.swift */; };
 		919CF7E520A82D40009FFA3D /* ObjectiveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF7E420A82D40009FFA3D /* ObjectiveListViewController.swift */; };
-		919CF7E720A82D4E009FFA3D /* ObjectiveListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919CF7E620A82D4E009FFA3D /* ObjectiveListView.xib */; };
 		919CF7E920A82D62009FFA3D /* ObjectiveListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF7E820A82D62009FFA3D /* ObjectiveListPresenter.swift */; };
 		919CF7EB20A82D71009FFA3D /* ObjectiveListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF7EA20A82D71009FFA3D /* ObjectiveListInteractor.swift */; };
 		919CF7ED20A82D9F009FFA3D /* ObjectiveDetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF7EC20A82D9F009FFA3D /* ObjectiveDetailContracts.swift */; };
@@ -76,7 +75,6 @@
 		919CF7D120A743E6009FFA3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		919CF7E220A82D29009FFA3D /* ObjectiveListContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveListContracts.swift; sourceTree = "<group>"; };
 		919CF7E420A82D40009FFA3D /* ObjectiveListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveListViewController.swift; sourceTree = "<group>"; };
-		919CF7E620A82D4E009FFA3D /* ObjectiveListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObjectiveListView.xib; sourceTree = "<group>"; };
 		919CF7E820A82D62009FFA3D /* ObjectiveListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveListPresenter.swift; sourceTree = "<group>"; };
 		919CF7EA20A82D71009FFA3D /* ObjectiveListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveListInteractor.swift; sourceTree = "<group>"; };
 		919CF7EC20A82D9F009FFA3D /* ObjectiveDetailContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveDetailContracts.swift; sourceTree = "<group>"; };
@@ -217,7 +215,6 @@
 			children = (
 				919CF80120A8368F009FFA3D /* Cell */,
 				919CF7E420A82D40009FFA3D /* ObjectiveListViewController.swift */,
-				919CF7E620A82D4E009FFA3D /* ObjectiveListView.xib */,
 				919CF81D20A8A417009FFA3D /* ObjectiveListViewStoryboard.storyboard */,
 			);
 			path = ViewController;
@@ -435,7 +432,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				919CF7E720A82D4E009FFA3D /* ObjectiveListView.xib in Resources */,
 				919CF7BA20A743E6009FFA3D /* LaunchScreen.storyboard in Resources */,
 				919CF7B720A743E6009FFA3D /* Assets.xcassets in Resources */,
 				919CF7F120A82DB9009FFA3D /* ObjectiveDetailView.xib in Resources */,
