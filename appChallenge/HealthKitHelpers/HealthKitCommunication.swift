@@ -76,7 +76,7 @@ class HealthKitCommunication {
                     if error != nil {
                         print("something went wrong")
                     } else if let quantity = statistics?.sumQuantity() {
-                        value = quantity.doubleValue(for: HKUnit.meterUnit(with: .kilo))
+                        value = quantity.doubleValue(for: HKUnit.meter())//quantity.doubleValue(for: HKUnit.meterUnit(with: .kilo))
                     }
                     completion(value)
                 }
