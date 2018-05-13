@@ -11,6 +11,6 @@ protocol ObjectiveListViewProtocol: class {
 }
 
 protocol ObjectiveListPresenterProtocol: class {
-    var view: ObjectiveListViewProtocol { get set }
+    var view: ObjectiveListViewProtocol? { get set }
     func getObjectives()
 }

@@ -6,4 +6,61 @@
 //  Copyright © 2018 adidas. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class ObjectiveListPresenter: ObjectiveListPresenterProtocol {
+
+    weak var view: ObjectiveListViewProtocol?
+    var interactor: ObjectiveListInteractorProtocol
+    var objectives: [Objective] = []
+
+    init(interactor: ObjectiveListInteractorProtocol) {
+        self.interactor = interactor
+    }
+
+    func getObjectives() {
+        self.objectives = interactor.getObjectives()
+        let objectivesViewModel = prepareDataForView(objectives: self.objectives)
+        view?.showObjectiveList(objectivesList: objectivesViewModel)
+    }
+
+    private func prepareDataForView(objectives: [Objective]) -> [ObjectiveListViewItemModel] {
+        var objectivesViewModel: [ObjectiveListViewItemModel] = []
+
+        for objective in objectives {
+
+            let title = objective.title
+            let description = objective.description
+            let medalImage = getMedaImage(reward: objective.reward.trophy)
+            let isCompleted = objective.progress >= objective.goal
+
+            let objectiveViewModel = ObjectiveListViewItemModel(title: title,
+                                                                description: description,
+                                                                medalImage: medalImage,
+                                                                isCompleted: isCompleted)
+
+            objectivesViewModel.append(objectiveViewModel)
+        }
+
+        return objectivesViewModel
+    }
+
+    private func getMedaImage(reward: Medals) -> UIImage {
+        var medalImage = UIImage()
+        switch reward {
+        case .bronze:
+            if let image = UIImage(named: "bronzeMedal") {
+                medalImage = image
+            }
+        case .silver:
+            if let image = UIImage(named: "silverMedal") {
+                medalImage = image
+            }
+        case .gold:
+            if let image = UIImage(named: "goldMedal") {
+                medalImage = image
+            }
+        }
+        return medalImage
+    }
+}
