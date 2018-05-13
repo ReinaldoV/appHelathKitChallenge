@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Objective Detail View Controller-->
         <scene sceneID="Iyp-JK-v6i">
             <objects>
-                <viewController id="bMy-Ws-po4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ObjectiveDetailViewController" id="bMy-Ws-po4" customClass="ObjectiveDetailViewController" customModule="appChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bzq-62-lxu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,6 +90,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ojl-UO-x6v"/>
                     </view>
+                    <connections>
+                        <outlet property="checkImageView" destination="mCd-ou-CBB" id="lEp-iu-Lf0"/>
+                        <outlet property="descriptionLabel" destination="lLa-cM-0r9" id="biv-E3-WHq"/>
+                        <outlet property="percentageLabel" destination="xZu-ps-nW4" id="wvt-ay-3hI"/>
+                        <outlet property="progressLabel" destination="TZh-Ag-OYc" id="U9q-ow-O72"/>
+                        <outlet property="progressView" destination="c1o-Sb-gcF" id="7FV-O9-SAZ"/>
+                        <outlet property="titleLabel" destination="Ctl-zZ-Qgc" id="IDf-6Z-yFe"/>
+                        <outlet property="trophyImageView" destination="Kjs-7I-68s" id="lE0-Wq-BJV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gsv-sl-Z2o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
