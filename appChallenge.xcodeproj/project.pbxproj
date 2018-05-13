@@ -28,6 +28,8 @@
 		919CF7FA20A83084009FFA3D /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF7F920A83084009FFA3D /* Reward.swift */; };
 		919CF7FD20A8319D009FFA3D /* ObjectiveListViewItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF7FC20A8319D009FFA3D /* ObjectiveListViewItemModel.swift */; };
 		919CF80020A83213009FFA3D /* ObjectiveDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF7FF20A83213009FFA3D /* ObjectiveDetailViewModel.swift */; };
+		919CF80320A836AD009FFA3D /* ObjectiveListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF80220A836AD009FFA3D /* ObjectiveListCell.swift */; };
+		919CF80520A836BC009FFA3D /* ObjectiveListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919CF80420A836BC009FFA3D /* ObjectiveListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		919CF7F920A83084009FFA3D /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 		919CF7FC20A8319D009FFA3D /* ObjectiveListViewItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveListViewItemModel.swift; sourceTree = "<group>"; };
 		919CF7FF20A83213009FFA3D /* ObjectiveDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveDetailViewModel.swift; sourceTree = "<group>"; };
+		919CF80220A836AD009FFA3D /* ObjectiveListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveListCell.swift; sourceTree = "<group>"; };
+		919CF80420A836BC009FFA3D /* ObjectiveListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObjectiveListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 		919CF7DF20A82CBA009FFA3D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				919CF80120A8368F009FFA3D /* Cell */,
 				919CF7E420A82D40009FFA3D /* ObjectiveListViewController.swift */,
 				919CF7E620A82D4E009FFA3D /* ObjectiveListView.xib */,
 			);
@@ -245,6 +250,15 @@
 				919CF7FF20A83213009FFA3D /* ObjectiveDetailViewModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		919CF80120A8368F009FFA3D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				919CF80220A836AD009FFA3D /* ObjectiveListCell.swift */,
+				919CF80420A836BC009FFA3D /* ObjectiveListCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +370,7 @@
 				919CF7B720A743E6009FFA3D /* Assets.xcassets in Resources */,
 				919CF7F120A82DB9009FFA3D /* ObjectiveDetailView.xib in Resources */,
 				919CF7B220A743E5009FFA3D /* Main.storyboard in Resources */,
+				919CF80520A836BC009FFA3D /* ObjectiveListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +406,7 @@
 				919CF7F320A82DC7009FFA3D /* ObjectiveDetailViewController.swift in Sources */,
 				919CF7AD20A743E5009FFA3D /* AppDelegate.swift in Sources */,
 				919CF7E920A82D62009FFA3D /* ObjectiveListPresenter.swift in Sources */,
+				919CF80320A836AD009FFA3D /* ObjectiveListCell.swift in Sources */,
 				919CF7FD20A8319D009FFA3D /* ObjectiveListViewItemModel.swift in Sources */,
 				919CF7E320A82D29009FFA3D /* ObjectiveListContracts.swift in Sources */,
 				919CF7EB20A82D71009FFA3D /* ObjectiveListInteractor.swift in Sources */,
