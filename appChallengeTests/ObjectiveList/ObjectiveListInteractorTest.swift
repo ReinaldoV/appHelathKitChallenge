@@ -36,7 +36,7 @@ class ObjectiveListInteractorTest: XCTestCase {
     }
     
     // MARK: - Get Airports test.
-    func testGetAirportsHappyCase() {
+    func testGetObjectives() {
         sut.getObjectives { objectives in
             XCTAssertNotNil(objectives)
             XCTAssertTrue(objectives.count > 0)
