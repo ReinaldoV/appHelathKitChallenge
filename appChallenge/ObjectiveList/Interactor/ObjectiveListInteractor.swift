@@ -14,7 +14,7 @@ protocol ObjectiveListInteractorProtocol: class {
 
 class ObjectiveListInteractor: ObjectiveListInteractorProtocol {
 
-    let kObjectivesUserDefault = "kObjectivesUserDefault"
+    private let kObjectivesUserDefault = "kObjectivesUserDefault"
 
     func getObjectives(onCompletion: @escaping ([Objective]) -> Void) {
         let healthKitCommunication = HealthKitCommunication()

@@ -39,6 +39,7 @@
 		919CF81C20A89DCB009FFA3D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF81B20A89DCB009FFA3D /* Coordinator.swift */; };
 		919CF81E20A8A417009FFA3D /* ObjectiveListViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919CF81D20A8A417009FFA3D /* ObjectiveListViewStoryboard.storyboard */; };
 		919CF82020A8A9F0009FFA3D /* ObjectiveDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919CF81F20A8A9F0009FFA3D /* ObjectiveDetailStoryboard.storyboard */; };
+		919CF82420A8C258009FFA3D /* ObjectiveListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF82320A8C258009FFA3D /* ObjectiveListInteractorTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		919CF81B20A89DCB009FFA3D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		919CF81D20A8A417009FFA3D /* ObjectiveListViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ObjectiveListViewStoryboard.storyboard; sourceTree = "<group>"; };
 		919CF81F20A8A9F0009FFA3D /* ObjectiveDetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ObjectiveDetailStoryboard.storyboard; sourceTree = "<group>"; };
+		919CF82320A8C258009FFA3D /* ObjectiveListInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveListInteractorTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,8 @@
 		919CF7C320A743E6009FFA3D /* appChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				919CF82220A8C211009FFA3D /* ObjectiveDetail */,
+				919CF82120A8C207009FFA3D /* ObjectiveList */,
 				919CF7C420A743E6009FFA3D /* appChallengeTests.swift */,
 				919CF7C620A743E6009FFA3D /* Info.plist */,
 			);
@@ -321,6 +325,21 @@
 				919CF81720A89195009FFA3D /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		919CF82120A8C207009FFA3D /* ObjectiveList */ = {
+			isa = PBXGroup;
+			children = (
+				919CF82320A8C258009FFA3D /* ObjectiveListInteractorTest.swift */,
+			);
+			path = ObjectiveList;
+			sourceTree = "<group>";
+		};
+		919CF82220A8C211009FFA3D /* ObjectiveDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ObjectiveDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,6 +511,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				919CF82420A8C258009FFA3D /* ObjectiveListInteractorTest.swift in Sources */,
 				919CF7C520A743E6009FFA3D /* appChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
