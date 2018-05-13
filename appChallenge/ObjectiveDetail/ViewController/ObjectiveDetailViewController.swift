@@ -17,6 +17,16 @@ class ObjectiveDetailViewController: UIViewController {
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var trophyImageView: UIImageView!
+    
+    var presenter: ObjectiveDetailPresenterProtocol!
+    
+    static func instantiate(presenter: ObjectiveDetailPresenterProtocol) -> ObjectiveDetailViewController {
+        let vc = UIStoryboard(name: "ObjectiveDetailStoryboard", bundle: nil).instantiateViewController(
+            withIdentifier: "ObjectiveDetailViewController") as! ObjectiveDetailViewController
+        presenter.view = vc
+        vc.presenter = presenter
+        return vc
+    }
 }
 
 extension ObjectiveDetailViewController: ObjectiveDetailViewProtocol {

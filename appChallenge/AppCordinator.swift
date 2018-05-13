@@ -32,7 +32,20 @@ class AppCoordinator: Coordinator {
         let interactor = ObjectiveListInteractor()
         let presenter = ObjectiveListPresenter(interactor: interactor)
         let viewController = ObjectiveListViewController.instantiate(presenter: presenter)
+        viewController.delegate = self
         self.navigationController.viewControllers = [viewController]
     }
     
+    private func showObjectiveDetailViewController(objective: Objective) {
+        let presenter = ObjectiveDetailPresenter(objective: objective)
+        let viewController = ObjectiveDetailViewController.instantiate(presenter: presenter)
+        self.navigationController.show(viewController, sender: self.navigationController)
+    }
+    
+}
+
+extension AppCoordinator: ObjectiveListViewControllerDelegate {
+    func didTapOnObjective(objective: Objective) {
+        self.showObjectiveDetailViewController(objective: objective)
+    }
 }
