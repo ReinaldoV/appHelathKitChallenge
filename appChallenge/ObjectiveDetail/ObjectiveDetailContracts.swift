@@ -11,6 +11,6 @@ protocol ObjectiveDetailViewProtocol: class {
 }
 
 protocol ObjectiveDetailPresenterProtocol: class {
-    var view: ObjectiveDetailViewProtocol { get set }
+    var view: ObjectiveDetailViewProtocol? { get set }
     func getObjectiveInfo()
 }
