@@ -6,11 +6,14 @@
 //  Copyright © 2018 adidas. All rights reserved.
 //
 
+import UIKit
+
 struct ObjectiveDetailViewModel {
     let title: String
     let description: String
-    let percentage: Int
+    let percentage: String
     let current: Double
     let goal: Double
-    let reward: Reward
+    let throphyImage: UIImage
+    let isCompleted: Bool
 }
