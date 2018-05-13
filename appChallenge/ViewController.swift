@@ -18,6 +18,9 @@ class ViewController: UIViewController {
         HealthKitCommunication().getTodaySteps { distance in
             print("Steps: %.1f", distance)
         }
+        ObjectiveListInteractor().getObjectives { (objectives) in
+            print(objectives)
+        }
     }
 
     override func didReceiveMemoryWarning() {

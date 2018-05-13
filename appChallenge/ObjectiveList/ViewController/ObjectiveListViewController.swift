@@ -17,9 +17,11 @@ class ObjectiveListViewController: UIViewController {
     var presenter: ObjectiveListPresenterProtocol!
     var objectivesList: [ObjectiveListViewItemModel] = []
     
-    convenience init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, presenter: ObjectiveListPresenterProtocol) {
-        self.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        self.presenter = presenter
+    static func instantiate(presenter: ObjectiveListPresenterProtocol) -> ObjectiveListViewController {
+        let vc = ObjectiveListViewController(nibName: "ObjectiveListView", bundle: nil)
+        presenter.view = vc
+        vc.presenter = presenter
+        return vc
     }
     
     override func viewDidLoad() {

@@ -37,6 +37,8 @@
 		919CF81120A8853D009FFA3D /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF81020A8853D009FFA3D /* Mapper.swift */; };
 		919CF81420A88DDF009FFA3D /* HealthKitCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF81320A88DDF009FFA3D /* HealthKitCommunication.swift */; };
 		919CF81820A89195009FFA3D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919CF81720A89195009FFA3D /* HealthKit.framework */; };
+		919CF81A20A89DA1009FFA3D /* AppCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF81920A89DA1009FFA3D /* AppCordinator.swift */; };
+		919CF81C20A89DCB009FFA3D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF81B20A89DCB009FFA3D /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		919CF81320A88DDF009FFA3D /* HealthKitCommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitCommunication.swift; sourceTree = "<group>"; };
 		919CF81520A89195009FFA3D /* appChallenge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = appChallenge.entitlements; sourceTree = "<group>"; };
 		919CF81720A89195009FFA3D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		919CF81920A89DA1009FFA3D /* AppCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCordinator.swift; sourceTree = "<group>"; };
+		919CF81B20A89DCB009FFA3D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,8 @@
 				919CF7DD20A82C96009FFA3D /* ObjectiveList */,
 				919CF7AC20A743E5009FFA3D /* AppDelegate.swift */,
 				919CF7AE20A743E5009FFA3D /* ViewController.swift */,
+				919CF81920A89DA1009FFA3D /* AppCordinator.swift */,
+				919CF81B20A89DCB009FFA3D /* Coordinator.swift */,
 				919CF7B020A743E5009FFA3D /* Main.storyboard */,
 				919CF7B620A743E6009FFA3D /* Assets.xcassets */,
 				919CF7B820A743E6009FFA3D /* LaunchScreen.storyboard */,
@@ -473,9 +479,11 @@
 				919CF7AD20A743E5009FFA3D /* AppDelegate.swift in Sources */,
 				919CF7E920A82D62009FFA3D /* ObjectiveListPresenter.swift in Sources */,
 				919CF80D20A882F2009FFA3D /* ObjectiveDTO.swift in Sources */,
+				919CF81C20A89DCB009FFA3D /* Coordinator.swift in Sources */,
 				919CF80320A836AD009FFA3D /* ObjectiveListCell.swift in Sources */,
 				919CF7FD20A8319D009FFA3D /* ObjectiveListViewItemModel.swift in Sources */,
 				919CF7E320A82D29009FFA3D /* ObjectiveListContracts.swift in Sources */,
+				919CF81A20A89DA1009FFA3D /* AppCordinator.swift in Sources */,
 				919CF7EB20A82D71009FFA3D /* ObjectiveListInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
