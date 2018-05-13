@@ -24,6 +24,8 @@
 		919CF7F120A82DB9009FFA3D /* ObjectiveDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919CF7F020A82DB9009FFA3D /* ObjectiveDetailView.xib */; };
 		919CF7F320A82DC7009FFA3D /* ObjectiveDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF7F220A82DC7009FFA3D /* ObjectiveDetailViewController.swift */; };
 		919CF7F520A82DD3009FFA3D /* ObjectiveDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF7F420A82DD3009FFA3D /* ObjectiveDetailPresenter.swift */; };
+		919CF7F820A82F16009FFA3D /* Objective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF7F720A82F16009FFA3D /* Objective.swift */; };
+		919CF7FA20A83084009FFA3D /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CF7F920A83084009FFA3D /* Reward.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		919CF7F020A82DB9009FFA3D /* ObjectiveDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObjectiveDetailView.xib; sourceTree = "<group>"; };
 		919CF7F220A82DC7009FFA3D /* ObjectiveDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveDetailViewController.swift; sourceTree = "<group>"; };
 		919CF7F420A82DD3009FFA3D /* ObjectiveDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveDetailPresenter.swift; sourceTree = "<group>"; };
+		919CF7F720A82F16009FFA3D /* Objective.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objective.swift; sourceTree = "<group>"; };
+		919CF7F920A83084009FFA3D /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		919CF7AB20A743E5009FFA3D /* appChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				919CF7F620A82EF9009FFA3D /* Models */,
 				919CF7DE20A82CA8009FFA3D /* ObjectiveDetail */,
 				919CF7DD20A82C96009FFA3D /* ObjectiveList */,
 				919CF7AC20A743E5009FFA3D /* AppDelegate.swift */,
@@ -209,6 +214,15 @@
 				919CF7F420A82DD3009FFA3D /* ObjectiveDetailPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		919CF7F620A82EF9009FFA3D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				919CF7F720A82F16009FFA3D /* Objective.swift */,
+				919CF7F920A83084009FFA3D /* Reward.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,8 +359,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				919CF7ED20A82D9F009FFA3D /* ObjectiveDetailContracts.swift in Sources */,
+				919CF7F820A82F16009FFA3D /* Objective.swift in Sources */,
 				919CF7F520A82DD3009FFA3D /* ObjectiveDetailPresenter.swift in Sources */,
 				919CF7E520A82D40009FFA3D /* ObjectiveListViewController.swift in Sources */,
+				919CF7FA20A83084009FFA3D /* Reward.swift in Sources */,
 				919CF7B520A743E5009FFA3D /* appChallenge.xcdatamodeld in Sources */,
 				919CF7AF20A743E5009FFA3D /* ViewController.swift in Sources */,
 				919CF7F320A82DC7009FFA3D /* ObjectiveDetailViewController.swift in Sources */,
