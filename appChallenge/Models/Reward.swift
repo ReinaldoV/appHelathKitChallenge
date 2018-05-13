@@ -11,6 +11,13 @@ struct Reward: Codable {
     let points: Int
 }
 
+extension Reward: Equatable {
+    static func == (lhs: Reward, rhs: Reward) -> Bool {
+        return lhs.trophy == rhs.trophy &&
+            lhs.points == rhs.points
+    }
+}
+
 enum Trophies: String, Codable {
     case bronzeMedal
     case silverMedal

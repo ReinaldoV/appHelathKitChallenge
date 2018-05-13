@@ -15,6 +15,17 @@ struct Objective: Codable {
     let reward: Reward
 }
 
+extension Objective: Equatable {
+    static func == (lhs: Objective, rhs: Objective) -> Bool {
+        return lhs.title == rhs.title &&
+            lhs.description == rhs.description &&
+            lhs.type == rhs.type &&
+            lhs.goal == rhs.goal &&
+            lhs.progress == rhs.progress &&
+            lhs.reward == rhs.reward
+    }
+}
+
 enum ObjectiveType: String, Codable {
     case step
     case walkingDistance
