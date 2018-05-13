@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Iyp-JK-v6i">
+            <objects>
+                <viewController id="bMy-Ws-po4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bzq-62-lxu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Este es el título" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctl-zZ-Qgc">
+                                <rect key="frame" x="122" y="60" width="131.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esta el la descripción" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLa-cM-0r9">
+                                <rect key="frame" x="20" y="111.5" width="335" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="mCd-ou-CBB">
+                                <rect key="frame" x="251.5" y="60.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="XHQ-a5-ra4"/>
+                                    <constraint firstAttribute="width" constant="20" id="pZJ-Zm-Dnr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZu-ps-nW4">
+                                <rect key="frame" x="137" y="286" width="100" height="32.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3WX-8d-bR5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="c1o-Sb-gcF">
+                                <rect key="frame" x="26" y="328.5" width="323" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Mff-0m-HXl"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="175/45430425" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZh-Ag-OYc">
+                                <rect key="frame" x="250.5" y="353.5" width="114.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zombieHand" translatesAutoresizingMaskIntoConstraints="NO" id="Kjs-7I-68s">
+                                <rect key="frame" x="112" y="404" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="eqZ-4V-tJo"/>
+                                    <constraint firstAttribute="width" constant="150" id="fwI-qt-bWE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="c1o-Sb-gcF" secondAttribute="trailing" constant="10" id="1hM-nJ-X3u"/>
+                            <constraint firstItem="Ctl-zZ-Qgc" firstAttribute="top" secondItem="Ojl-UO-x6v" secondAttribute="top" constant="40" id="94t-GO-WsV"/>
+                            <constraint firstItem="Ctl-zZ-Qgc" firstAttribute="centerX" secondItem="Ojl-UO-x6v" secondAttribute="centerX" id="9jJ-6m-aUM"/>
+                            <constraint firstItem="lLa-cM-0r9" firstAttribute="leading" secondItem="Ojl-UO-x6v" secondAttribute="leading" constant="20" id="EQu-Dp-71o"/>
+                            <constraint firstItem="c1o-Sb-gcF" firstAttribute="top" secondItem="xZu-ps-nW4" secondAttribute="bottom" constant="10" id="FFB-4L-P6S"/>
+                            <constraint firstItem="mCd-ou-CBB" firstAttribute="centerY" secondItem="Ctl-zZ-Qgc" secondAttribute="centerY" id="HlS-Ur-Y32"/>
+                            <constraint firstItem="Ojl-UO-x6v" firstAttribute="trailing" secondItem="lLa-cM-0r9" secondAttribute="trailing" constant="20" id="R8B-Yi-ubg"/>
+                            <constraint firstItem="c1o-Sb-gcF" firstAttribute="leading" secondItem="bzq-62-lxu" secondAttribute="leadingMargin" constant="10" id="VyN-bU-w03"/>
+                            <constraint firstItem="Kjs-7I-68s" firstAttribute="centerX" secondItem="Ojl-UO-x6v" secondAttribute="centerX" id="gQH-Kd-oFd"/>
+                            <constraint firstItem="xZu-ps-nW4" firstAttribute="centerX" secondItem="Ojl-UO-x6v" secondAttribute="centerX" id="gs6-7m-ayj"/>
+                            <constraint firstItem="TZh-Ag-OYc" firstAttribute="top" secondItem="c1o-Sb-gcF" secondAttribute="bottom" constant="10" id="iVc-sH-ebT"/>
+                            <constraint firstItem="Ojl-UO-x6v" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ctl-zZ-Qgc" secondAttribute="trailing" constant="20" id="j6S-IB-HKr"/>
+                            <constraint firstItem="lLa-cM-0r9" firstAttribute="top" secondItem="Ctl-zZ-Qgc" secondAttribute="bottom" constant="30" id="pAh-3f-Vnq"/>
+                            <constraint firstItem="Kjs-7I-68s" firstAttribute="top" secondItem="TZh-Ag-OYc" secondAttribute="bottom" constant="30" id="sXH-tE-VfW"/>
+                            <constraint firstItem="xZu-ps-nW4" firstAttribute="top" secondItem="lLa-cM-0r9" secondAttribute="bottom" constant="155" id="weE-Fc-DRT"/>
+                            <constraint firstItem="mCd-ou-CBB" firstAttribute="leading" secondItem="Ctl-zZ-Qgc" secondAttribute="trailing" constant="-2" id="y1P-VT-mDY"/>
+                            <constraint firstItem="Ojl-UO-x6v" firstAttribute="trailing" secondItem="TZh-Ag-OYc" secondAttribute="trailing" constant="10" id="yfi-Jm-D2u"/>
+                            <constraint firstItem="Ctl-zZ-Qgc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ojl-UO-x6v" secondAttribute="leading" constant="20" id="yo8-OX-9sJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ojl-UO-x6v"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gsv-sl-Z2o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="147.97601199400302"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="check" width="600" height="600"/>
+        <image name="zombieHand" width="630" height="630"/>
+    </resources>
+</document>
