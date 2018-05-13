@@ -22,7 +22,9 @@ class ObjectiveListPresenter: ObjectiveListPresenterProtocol {
         interactor.getObjectives { (objectives) in
             self.objectives = objectives
             let objectivesViewModel = self.prepareDataForView(objectives: self.objectives)
-            self.view?.showObjectiveList(objectivesList: objectivesViewModel)
+            DispatchQueue.main.async {
+                self.view?.showObjectiveList(objectivesList: objectivesViewModel)
+            }
         }
     }
 
