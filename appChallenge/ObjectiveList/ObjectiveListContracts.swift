@@ -6,6 +6,8 @@
 //  Copyright © 2018 adidas. All rights reserved.
 //
 
+import UIKit
+
 protocol ObjectiveListViewProtocol: class {
     func showObjectiveList(objectivesList: [ObjectiveListViewItemModel])
 }
@@ -13,4 +15,5 @@ protocol ObjectiveListViewProtocol: class {
 protocol ObjectiveListPresenterProtocol: class {
     var view: ObjectiveListViewProtocol? { get set }
     func getObjectives()
+    func returnObjectiveFromIndex(indexPath: IndexPath) -> Objective
 }

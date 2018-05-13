@@ -17,6 +17,19 @@ class ObjectiveListPresenter: ObjectiveListPresenterProtocol {
     init(interactor: ObjectiveListInteractorProtocol) {
         self.interactor = interactor
     }
+    
+    func returnObjectiveFromIndex(indexPath: IndexPath) -> Objective {
+        if indexPath.row > objectives.count - 1 {
+            return Objective(title: "",
+                             description: "",
+                             type: .step,
+                             goal: 1,
+                             progress: 1,
+                             reward: Reward(trophy: .bronzeMedal,
+                                            points: 1))
+        }
+        return objectives[indexPath.row]
+    }
 
     func getObjectives() {
         interactor.getObjectives { (objectives) in

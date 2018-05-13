@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ObjectiveListViewControllerDelegate: class {
+    func didTapOnObjective(objective: Objective)
+}
+
 class ObjectiveListViewController: UIViewController {
     
     let kObjectiveListCellIdentifier = "ObjectiveCell"
@@ -16,6 +20,7 @@ class ObjectiveListViewController: UIViewController {
     
     var presenter: ObjectiveListPresenterProtocol!
     var objectivesList: [ObjectiveListViewItemModel] = []
+    weak var delegate: ObjectiveListViewControllerDelegate?
     
     static func instantiate(presenter: ObjectiveListPresenterProtocol) -> ObjectiveListViewController {
         let vc = UIStoryboard(name: "ObjectiveListViewStoryboard", bundle: nil).instantiateViewController(
@@ -68,5 +73,10 @@ extension ObjectiveListViewController: UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let objective = self.presenter.returnObjectiveFromIndex(indexPath: indexPath)
+        self.delegate?.didTapOnObjective(objective: objective)
     }
 }
